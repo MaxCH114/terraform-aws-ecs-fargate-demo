@@ -35,7 +35,7 @@ jobs:
       working-directory: ./ecs-demo
 
     - name : apply Terraform deployment
-      run : terraform apply -auto-approve
+      run : terraform destroy -auto-approve
       working-directory: ./ecs-demo
 
   

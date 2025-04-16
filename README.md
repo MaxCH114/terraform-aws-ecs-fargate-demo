@@ -27,3 +27,35 @@ This project demonstrates how to deploy a containerized application on **Amazon 
 
  ├── main.tf # Main Terraform configuration ├── variables.tf # Variable definitions (optional) ├── outputs.tf # Output values ├── README.md 
 
+
+🌐 Internet
+This is where external users (like you or your clients) initiate a request to access your app.
+
+🧭 Application Load Balancer (ALB)
+Accepts HTTP requests from the internet.
+
+Distributes traffic to your ECS service across multiple Availability Zones (AZs).
+
+Helps with load balancing, scaling, and high availability.
+
+🚢 ECS Service (Fargate)
+Manages running tasks (containers) within your ECS Cluster.
+
+Uses Fargate, meaning you don’t have to provision or manage EC2 instances — it’s serverless.
+
+Automatically places containers across available subnets.
+
+📦 Nginx Container
+Your containerized web application. In this project, you're running Nginx as a sample app.
+
+You could replace this with any app (Node.js, Python Flask, etc.) in the future.
+
+🌐 Public Subnets
+Your ECS service and Load Balancer live in two public subnets across different Availability Zones for high availability.
+
+These subnets are part of a custom VPC.
+
+🏗️ VPC (Virtual Private Cloud)
+Isolates your network from others on AWS.
+
+Hosts all the resources: ECS, ALB, subnets, security groups, etc.
