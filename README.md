@@ -10,7 +10,7 @@ This project demonstrates how to deploy a containerized application on **Amazon 
 
 ### Below is an image showcasing the architecture of the cloud-based application I built.
 
-![Project Image](terraform-aws-ecs-fargate-demo\ecs-demo\Image/ECS.gif)
+![Project Image](https://github.com/MaxCH114/terraform-aws-ecs-fargate-demo/blob/master/ecs-demo/Image/ECS.gif)
 
 ## 📦 Features
 
