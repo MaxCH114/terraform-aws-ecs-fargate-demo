@@ -3,11 +3,6 @@
 This project demonstrates how to deploy a containerized application on **Amazon ECS (Fargate)** using **Terraform**. It provisions a scalable and secure infrastructure to run an Nginx container behind an Application Load Balancer (ALB), all managed as Infrastructure as Code.
 
 ---
-### **Author**
-- Paul Max Chamblain | 
-
-[Linkedin] (https://www.linkedin.com/in/paulmchamblain/)
-
 ### Below is an image showcasing the architecture of the cloud-based application I built.
 
 ![Project Image](https://github.com/MaxCH114/terraform-aws-ecs-fargate-demo/blob/master/ecs-demo/Image/ECS.gif)
@@ -59,3 +54,9 @@ These subnets are part of a custom VPC.
 Isolates your network from others on AWS.
 
 Hosts all the resources: ECS, ALB, subnets, security groups, etc.
+
+
+## **Author**
+- Paul Max Chamblain | 
+
+[Linkedin] (https://www.linkedin.com/in/paulmchamblain/)
